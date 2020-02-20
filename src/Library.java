@@ -1,7 +1,11 @@
+
+import java.util.ArrayList;
+
 public class Library {
 
     private int numberBooks;
     private int numberDays;
+    private ArrayList<Books> books;
 
     public int getNumberBooks() {
         return numberBooks;
@@ -33,5 +37,13 @@ public class Library {
         this.numberBooks = numberBooks;
         this.numberDays = numberDays;
         this.booksPerDay = booksPerDay;
+        this.books = new ArrayList<>();
+    }
+
+    public void addBook(Books book){
+        this.books.add(book);
+    }
+    public ArrayList<Books> addBook(){
+        return this.books;
     }
 }
