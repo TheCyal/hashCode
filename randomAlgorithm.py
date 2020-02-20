@@ -1,1 +1,0 @@
-# class for random algorithm

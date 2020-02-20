@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/hashCode.iml" filepath="$PROJECT_DIR$/.idea/hashCode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hashCode.iml" filepath="$PROJECT_DIR$/hashCode.iml" />
     </modules>
   </component>
 </project>
