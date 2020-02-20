@@ -6,6 +6,7 @@ public class Library {
     private int numberBooks;
     private int numberDays;
     private ArrayList<Books> books;
+    private double ratio;
 
     public int getNumberBooks() {
         return numberBooks;
@@ -45,5 +46,17 @@ public class Library {
     }
     public ArrayList<Books> addBook(){
         return this.books;
+    }
+
+    public double getRatio(){
+        return this.numberDays/this.books.size();
+    }
+
+     public void setRatio(){
+        this.ratio = this.getRatio()
+    }
+
+    public void getActualRatio(){
+        return ratio;
     }
 }

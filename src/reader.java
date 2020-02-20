@@ -22,10 +22,14 @@ public class reader {
                 for(int j = 0; i<libraries[i].getNumberBooks(); j++){
                     libraries[i].addBook(books[scanner.nextInt()]);
                 }
+                libraries[i].setRatio()
             }
+
+            libraries
 
         }
         scanner.close();
 
+        
     }
 }
