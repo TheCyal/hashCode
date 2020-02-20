@@ -53,7 +53,7 @@ public class Library {
     }
 
      public void setRatio(){
-        this.ratio = this.getRatio()
+        this.ratio = this.getRatio();
     }
 
     public void getActualRatio(){

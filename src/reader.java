@@ -1,6 +1,7 @@
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
+import java.util.stream.Stream;
 
 public class reader {
     public static void main(String[] args) throws FileNotFoundException {
@@ -19,17 +20,22 @@ public class reader {
             }
             for(int i = 0; i< libraries.length; i++){
                 libraries[i] = new Library(scanner.nextInt(),scanner.nextInt(),scanner.nextInt());
-                for(int j = 0; i<libraries[i].getNumberBooks(); j++){
+                for(int j = 0; j<libraries[i].getNumberBooks(); j++){
                     libraries[i].addBook(books[scanner.nextInt()]);
                 }
                 libraries[i].setRatio();
             }
-
             
+            
+            Stream.of(libraries)
+            .filter(s -> s.getRatio() > 0)
+            .forEach(s -> System.out.println(s + ": " + s.getRatio()));
+           
 
         }
         scanner.close();
 
+        
         
     }
 }
